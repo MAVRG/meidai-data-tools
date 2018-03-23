@@ -1,0 +1,52 @@
+# Deal with Latex Files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.alg
+*.loa
+*.brf
+*.lol
+*.idx
+*.ilg
+*.ind
+*.ist
+*.bak
+*.sav
+.texpadtmp
+*.backup
+
+# DIA diagrams
+*.autosave
+
+# Linux temp files or whatever
+*~
+*~*
+*.~
+.~*
+
+# Temp libreimpress file
+*.odp#
+
+# pycharm
+.idea
+.idea/*
