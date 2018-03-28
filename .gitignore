@@ -1,3 +1,5 @@
+build/
+
 # Deal with Latex Files
 *.aux
 *.lof
