@@ -22,7 +22,10 @@ def plot_pointcloud(dataset, stride = 4):
             ax.set_xlabel('x')
             ax.set_ylabel('y')
             ax.set_zlabel('z')
-            # ax.axis('square')
+            pc_mean = np.mean(pointcloud, axis=0)
+            ax.set_xlim(pc_mean[0] - 1.5, pc_mean[0] + 1.5)
+            ax.set_ylim(pc_mean[1] - 1.5, pc_mean[1] + 1.5)
+            ax.set_zlim(np.min(pointcloud[:, 2]), pc_mean[2] + 1.2)
             plt.show()
 
 

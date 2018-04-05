@@ -15,14 +15,14 @@ def plot_pointcloud_seq(dataset, stride = 4):
     # for track_id in dataset['pointclouds']: # Show all point clouds
     for track_id in dataset['filtered']: # Show only unfiltered pointclouds
         num_t = 0
-        c = np.random.rand(3, 1)
+        c = np.random.rand(1, 3)
         ordered_pc = OrderedDict(sorted(dataset['pointclouds'][track_id].items(), key=lambda t: t[0]))
         for timestamp in ordered_pc: # Show all pointclouds
             pointcloud = ordered_pc[timestamp]
             fig = plt.figure()
             ax = fig.add_subplot(111, projection='3d')
             ax.scatter(pointcloud[:,0], pointcloud[:,1], pointcloud[:,2], c=c, marker='o', depthshade=False)
-            print(num_t)
+
             num_t += 1
             if num_t > 4:
                 ax.scatter(pppprev_pointcloud[:, 0], pppprev_pointcloud[:, 1], pppprev_pointcloud[:, 2], c=c,
@@ -42,6 +42,10 @@ def plot_pointcloud_seq(dataset, stride = 4):
             if num_t > 0:
                 prev_pointcloud = pointcloud
 
+            pc_mean = np.mean(pointcloud, axis=0)
+            ax.set_xlim(pc_mean[0] - 2, pc_mean[0] + 2)
+            ax.set_ylim(pc_mean[1] - 2, pc_mean[1] + 2)
+            ax.set_zlim(np.min(pointcloud[:, 2]), pc_mean[2] + 1.5)
             ax.set_xlabel('x')
             ax.set_ylabel('y')
             ax.set_zlabel('z')
