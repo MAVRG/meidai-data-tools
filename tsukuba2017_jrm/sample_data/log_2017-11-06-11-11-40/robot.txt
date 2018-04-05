@@ -1,1 +1,0 @@
-rostime,positionx,positiony,positionz,orientationx,orientationy,orientationz,orientationw

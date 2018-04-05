@@ -10,14 +10,14 @@ from six.moves import cPickle as pickle
 #   see paper or create_dict for filtering details.
 # 'pointclouds': segmented pointclouds for each object
 # - dataset['raw_tracks'].keys() (or any other of the above 4 keys) returns all track IDs as keys in that dictionary.
-# - dataset['pointclouds'][track_ID] is also a dictionary. dataset['pointclous'][track_ID].keys() returns all the timestamps
+# - dataset['pointclouds'][track_ID] is also a dictionary. dataset['pointclouds'][track_ID].keys() returns all the timestamps
 #       where that dataset was observed, as keys to that dictionary.
 # - map_data is a Nx3 matrix of points, centroids for the voxel grid map.
 # - dataset['raw_tracks'][track_ID] : N x 7
 #       [timestamp, position_x, position_y, position_z, orientation_w, variance_x, variance_y]
 #       - approximating the 2D particle filter distrubution as a gaussian, we get the above variance
 # - dataset['tracks'][trackID] : N x 3
-#       [obstime, positionx, positiony]
+#       [obstime, position_x, position_y]
 # - dataset['filtered'] : N x 7
 #       [timestamp. position_x, position_y, heading, velocity_x, velocity_y, rotation_w]
 #       heading is from +x-axis, ccw [-pi, pi
