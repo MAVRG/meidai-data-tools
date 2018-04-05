@@ -39,7 +39,7 @@ def plot_vel(dataset, max_vel = 4, min_vel = 0):
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         dir = os.path.dirname(os.path.dirname(os.path.abspath('__file__')))
-        dataset_file = dir + "/sample_data/log_2017-11-04-11-38-47.pk1"
+        dataset_file = dir + "/sample_data/log_2017-11-03-10-30-10.pk1"
         map_file = dir + "/sample_data/map.txt"
     else:
         dataset_file = sys.argv[1]

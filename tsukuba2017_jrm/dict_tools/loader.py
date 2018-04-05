@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # Load from file or from calling the script
     if len(sys.argv) < 3:
         dir = os.path.dirname(os.path.dirname(os.path.abspath('__file__')))
-        dataset_file = dir + "/sample_data/log_2017-11-06-11-11-40/log_2017-11-06-11-11-40.pk1"
+        dataset_file = dir + "/sample_data/log_2017-11-03-10-30-10.pk1"
         map_file = dir + "/sample_data/map.txt"
     else:
         dataset_file = sys.argv[1]

@@ -2,7 +2,7 @@
 
 This is a set of tools to be used alongside the [2017 Tsukuba Challenge Dataset](https://goo.gl/k2pGHE). This dataset contains 3D Lidar (HDL-32) dynamic object detection and tracking data. The objects are largely pedestrians, some cyclists and others, in particular robots.
 
-The tracking data of 15 runs is given, raw data and convenient pickle files. A pickle file containing all available data is also available. In each pickle file, you will find raw tracking information, b-spline smoothed, and filtered tracks. Segmented pointclouds of the detected dynamic objects are also given. Some sample data, as well as the Tsukuba lidar map, is given in this package.
+The tracking data of 15 runs is given, raw data and convenient pickle files. A pickle file containing all available data is also available. In each pickle file, you will find raw tracking information, b-spline smoothed, and filtered tracks. Segmented pointclouds of the detected dynamic objects are also given. A sample pickle file is given, as well as the Tsukuba lidar map, is given in this package. Please follow the above link for the raw data and complete pickle files.
 
 ### Packages
 ##### dict_tools

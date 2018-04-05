@@ -1,16 +1,18 @@
 #!/usr/bin/env python
-
+import os
 import numpy as np
 from six.moves import cPickle as pickle
+import copy
 
 # Combine data in all these directories into one dictionary
-directories = ["~/Documents/workspaces/meidai-data-tools/tsukuba2017-jrm/sample_data/log_2017-11-06-11-11-40/",
-               "~/Documents/workspaces/meidai-data-tools/tsukuba2017-jrm/sample_data/log_2017-11-06-11-11-40/"
+dir = os.path.dirname(os.path.dirname(os.path.abspath('__file__')))
+directories = [dir + "/sample_data/log_2017-11-03-10-30-10",
+               # dir + "/sample_data/log_2017-11-03-10-30-10"
                # You can add several directories, a list of strings separated by a comma as above
     ]
 
 # Pickle file output name
-save_fn = "~/Documents/workspaces/meidai-data-tools/tsukuba2017-jrm/sample_data/log_2017-11-06-11-11-40.pk1"
+save_fn = dir + "/sample_data/log_2017-11-03-10-30-10.pk1"
 
 # Dictionary initialization
 dataset = {}
