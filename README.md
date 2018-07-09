@@ -12,5 +12,5 @@ Tested on Ubuntu 16.04 and Python 2.12. Python packages used are shown below, wi
 
 ## Packages
 ### Tsukuba Data Tools
-There tools are to be used with the [2017 Tsukuba Challenge Dataset](https://goo.gl/k2pGHE). Visit that package's [github page](https://github.com/jacoblambert/meidai-data-tools/tree/master/tsukuba2017_jrm) for more information.
+There tools are to be used with the [2017 Tsukuba Challenge Dataset](https://drive.google.com/drive/folders/1WmX28l4kCDSD7udhbKmVSkeluy8-yCdL?usp=sharing). Visit that package's [github page](https://github.com/jacoblambert/meidai-data-tools/tree/master/tsukuba2017_jrm) for more information.
 
